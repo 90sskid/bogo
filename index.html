@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BOGO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class="heading-lined">YAY! It’s BOGO</h2>
+        <!-- first card starts from here -->
+        <div class="card" data-price="10.00" onclick="selectCard(this)">
+
+            <div class="card-header">
+                <label class="radio-container">
+                    <input type="radio" name="unit" />
+                    <span class="custom-radio"></span>
+                </label>
+                <div class="card-title">
+                    <span>1 Unit</span>
+                    <span class="badge">10% Off</span>
+                </div>
+                <div class="price-info">
+                    <strong>$10.00 USD</strong>
+                    <span class="old-price">$24.00 USD</span>
+                </div>
+            </div>
+            <div class="desc">Standard Price</div>
+            <div class="options">
+                <div>
+                    <label>#1</label>
+                    <select>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                    <select>
+                        <option>Black</option>
+                        <option>Red</option>
+                        <option>Blue</option>
+                    </select>
+                </div>
+                <div>
+                    <label>#2</label>
+                    <select>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                    <select>
+                        <option>Colour</option>
+                        <option>Red</option>
+                        <option>Blue</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- first card ends here -->
+        <!-- second card starts from here -->
+        <div class="card active" data-price="18.00" onclick="selectCard(this)">
+
+            <div class="card-header">
+                <label class="radio-container">
+                    <input type="radio" name="unit" checked />
+                    <span class="custom-radio"></span>
+                </label>
+                <div class="card-title">
+                    <span>2 Unit</span>
+                    <span class="badge">20% Off</span>
+                </div>
+                <div class="price-info">
+                    <strong>$18.00 USD</strong>
+                    <span class="old-price">$24.00 USD</span>
+                </div>
+                <span class="tag">MOST POPULAR</span>
+            </div>
+            <div class="options">
+                <div>
+                    <label>#1</label>
+                    <select>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                    <select>
+                        <option>Black</option>
+                        <option>Red</option>
+                        <option>Blue</option>
+                    </select>
+                </div>
+                <div>
+                    <label>#2</label>
+                    <select>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                    <select>
+                        <option>Colour</option>
+                        <option>Red</option>
+                        <option>Blue</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- second card ends here -->
+        <!-- third card starts from here -->
+        <div class="card" data-price="24.00" onclick="selectCard(this)">
+
+            <div class="card-header">
+                <label class="radio-container">
+                    <input type="radio" name="unit" />
+                    <span class="custom-radio"></span>
+                </label>
+                <div class="card-title">
+                    <span>3 Unit</span>
+                    <span class="badge">30% Off</span>
+                </div>
+                <div class="price-info">
+                    <strong>$24.00 USD</strong>
+                    <span class="old-price">$24.00 USD</span>
+                </div>
+            </div>
+            <div class="options">
+                <div>
+                    <label>#1</label>
+                    <select>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                    <select>
+                        <option>Black</option>
+                        <option>Red</option>
+                        <option>Blue</option>
+                    </select>
+                </div>
+                <div>
+                    <label>#2</label>
+                    <select>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                    <select>
+                        <option>Colour</option>
+                        <option>Red</option>
+                        <option>Blue</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- third card ends here -->
+        <div class="footer">
+            <span class="delivery">Free Delivery</span>
+            <span class="total">Total : $<span id="totalPrice">18.00</span> USD</span>
+        </div>
+
+        <button class="add-to-cart">+ Add to Cart</button>
+        <p class="powered">Powered by Pumper</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
